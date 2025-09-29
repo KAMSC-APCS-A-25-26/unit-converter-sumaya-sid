@@ -8,6 +8,7 @@ public class DistanceConverter {
         // TODO: Implement distance converter
         // Requirements:
         boolean run = true;
+        // - Loop until user chooses to exit
         while (run) {
 
             // - Menu with options: 1. Convert Miles to Kilometers, 2. Convert Kilometers to Miles, 3. Exit
@@ -31,8 +32,10 @@ public class DistanceConverter {
                         System.out.println("Invalid distance value.");
                     }
                     else {
+                        // - Use conversion factor: 1 mile = 1.60935 kilometers
                         double kilo1 = miles1 * 1.60935;
                         System.out.println();
+                        // - Display conversion results
                         System.out.println("Conversion Results:");
                         System.out.println("Miles: " + miles1);
                         System.out.println("Kilometers: " + kilo1);
@@ -46,28 +49,26 @@ public class DistanceConverter {
                         System.out.println("Invalid distance value.");
                     }
                     else {
+                        // - Use conversion factor: 1 mile = 1.60935 kilometers
                         double miles2 = kilo2 * 1.60935;
                         System.out.println();
+                        // - Display conversion results
                         System.out.println("Conversion Results:");
                         System.out.println("Kilometers: " + kilo2);
                         System.out.println("Miles: " + miles2);
                     }
                     break;
                 case 3:
+                    // - Loop until user chooses to exit
                     System.out.println();
                     System.out.print("Goodbye!");
                     run = false;
                     break;
+                // - Handle invalid menu choices
                 default:
                     System.out.println("Invalid choice.");
 
             }
         }
-
-        // - Loop until user chooses to exit
-
-        // - Use conversion factor: 1 mile = 1.60935 kilometers
-        // - Display conversion results
-        // - Handle invalid menu choices
     }
 }
