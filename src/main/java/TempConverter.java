@@ -13,7 +13,7 @@ public class TempConverter {
         // - Loop until user chooses to exit
         while (run) {
 
-            // - Menu with options: 1. Convert Miles to Kilometers, 2. Convert Kilometers to Miles, 3. Exit
+            // - Menu with options: 1. Convert Fahrenheit to Celsius, 2. Convert Celsius to Fahrenheit, 3. Exit
             System.out.println();
             System.out.println("Choose conversion direction:");
             System.out.println("1. Convert Fahrenheit to Celsius");
@@ -23,6 +23,7 @@ public class TempConverter {
             System.out.print("Enter your choice (1, 2, or 3): ");
             int choice = scan.nextInt();
 
+            // - Use formulas: C = (F - 32) * 5/9 and F = C * 9/5 + 32
             switch (choice) {
                 case 1:
                     System.out.print("Enter temperature in Fahrenheit: ");
@@ -51,6 +52,7 @@ public class TempConverter {
                     System.out.print("Goodbye!");
                     run = false;
                     break;
+
                 // - Handle invalid menu choices
                 default:
                     System.out.println("Invalid choice.");
@@ -58,11 +60,5 @@ public class TempConverter {
 
             }
         }
-
-        // - Menu with options: 1. Convert Fahrenheit to Celsius, 2. Convert Celsius to Fahrenheit, 3. Exit
-        // - Loop until user chooses to exit
-        // - Use formulas: C = (F - 32) * 5/9 and F = C * 9/5 + 32
-        // - Display conversion results
-        // - Handle invalid menu choices
     }
 }
