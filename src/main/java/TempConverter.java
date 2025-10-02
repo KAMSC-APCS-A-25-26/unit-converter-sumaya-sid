@@ -56,6 +56,7 @@ public class TempConverter {
                 // - Handle invalid menu choices
                 default:
                     System.out.println("Invalid choice.");
+                    System.out.println("Enter a valid choice: ");
                     break;
 
             }
