@@ -33,7 +33,7 @@ public class DistanceConverter {
                     }
                     else {
                         // - Use conversion factor: 1 mile = 1.60935 kilometers
-                        double kilo1 = miles1 * 1.60935;
+                        double kilo1 = (miles1 * 1.60935);
                         System.out.println();
                         // - Display conversion results
                         System.out.println("Conversion Results:");
@@ -50,7 +50,7 @@ public class DistanceConverter {
                     }
                     else {
                         // - Use conversion factor: 1 mile = 1.60935 kilometers
-                        double miles2 = kilo2 * 1.60935;
+                        double miles2 = kilo2 / 1.60935;
                         System.out.println();
                         // - Display conversion results
                         System.out.println("Conversion Results:");
